@@ -1,25 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './bootstrap/css/bootstrap.min.css';
+import './fontawesome/css/all.css';
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import ProductList from './components/ProductList';
+import Details from './components/Details';
+import Cart from './components/Cart';
+import Default from './components/Default';
+import Modal from './components/Modal';
 
-import Home from "./pages/Home";
-import Rooms from "./pages/Rooms";
-import SingleRoom from "./pages/SingleRoom";
-import Error from "./pages/Error";
-import { Route, Switch } from "react-router-dom";
-import NavBar from './components/NavBar';
 
-function App() {
-  return (
-    <>
-      <NavBar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/rooms" exact component={Rooms} />
-        <Route path="/rooms/:slug" exact component={SingleRoom} />
-        <Route component={Error} />
-      </Switch>
-    </>
-  );
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact component={ProductList} />
+          <Route path="/details" component={Details} />
+          <Route path="/cart" component={Cart} />
+          <Route component={Default} />
+        </Switch>
+        <Modal />
+
+      </React.Fragment>
+    )
+  }
+
 }
 
 export default App;
