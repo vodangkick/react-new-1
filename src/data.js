@@ -1,398 +1,760 @@
-import img1 from "./asset/img/product/feature-product/f-p-1.jpg";
-import imgSmall1 from "./asset/img/product/most-product/m-product-1.jpg";
-import img2 from "./asset/img/product/feature-product/f-p-2.jpg";
-import imgSmall2 from "./asset/img/product/most-product/m-product-2.jpg";
-import img3 from "./asset/img/product/feature-product/f-p-3.jpg";
-import imgSmall3 from "./asset/img/product/most-product/m-product-3.jpg";
-import img4 from "./asset/img/product/feature-product/f-p-4.jpg";
-import imgSmall4 from "./asset/img/product/most-product/m-product-4.jpg";
-import img5 from "./asset/img/product/feature-product/f-p-5.jpg";
-import imgSmall5 from "./asset/img/product/most-product/m-product-5.jpg";
-import img6 from "./asset/img/product/feature-product/f-p-6.jpg";
-import imgSmall6 from "./asset/img/product/most-product/m-product-6.jpg";
-import img7 from "./asset/img/product/feature-product/f-p-7.jpg";
-import imgSmall7 from "./asset/img/product/most-product/m-product-7.jpg";
-import img8 from "./asset/img/product/feature-product/f-p-8.jpg";
-import imgSmall8 from "./asset/img/product/most-product/m-product-8.jpg";
+import room1 from "./images/details-1.jpeg";
+import room2 from "./images/details-2.jpeg";
+import room3 from "./images/details-3.jpeg";
+import room4 from "./images/details-4.jpeg";
+import img1 from "./images/room-1.jpeg";
+import img2 from "./images/room-2.jpeg";
+import img3 from "./images/room-3.jpeg";
+import img4 from "./images/room-4.jpeg";
+import img5 from "./images/room-5.jpeg";
+import img6 from "./images/room-6.jpeg";
+import img7 from "./images/room-7.jpeg";
+import img8 from "./images/room-8.jpeg";
+import img9 from "./images/room-9.jpeg";
+import img10 from "./images/room-10.jpeg";
+import img11 from "./images/room-11.jpeg";
+import img12 from "./images/room-12.jpeg";
 
-
-const products = [
-    {
-        sys: {
-            id: "1"
+export default [
+  {
+    sys: {
+      id: "1"
+    },
+    fields: {
+      name: "single economy",
+      slug: "single-economy",
+      type: "single",
+      price: 100,
+      size: 200,
+      capacity: 1,
+      pets: false,
+      breakfast: false,
+      featured: false,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img1
+            }
+          }
         },
-        fields: {
-            name: "single economy 1",
-            slug: "single-economy-1",
-            price: 900,
-            featured: true,
-            width: 0,
-            color: 1,
-            brand: 1,
-            height: "30mm",
-            availibility: true,
-            category: 1,
-            weight: "52gm",
-            depth: "85mm",
-            quality_checking: true,
-            freshness_duration: "03days",
-            when_packeting: "Without touch of hand",
-            each_box_contains: "60pcs",
-            short_desction: "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
-            description:
-                "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter. pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            images: [
-                {
-                    fields: {
-                        file: {
-                            url: img1,
-                            urlSmall: imgSmall1
-                        }
-                    }
-                },
-
-            ]
-        }
-    },
-    {
-        sys: {
-            id: "2"
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
         },
-        fields: {
-            name: "single economy 2",
-            slug: "single-economy-2",
-            price: 200,
-            featured: true,
-            width: 0,
-            color: 2,
-            brand: 1,
-            height: "30mm",
-            availibility: true,
-            category: 1,
-            weight: "52gm",
-            depth: "85mm",
-            quality_checking: true,
-            freshness_duration: "03days",
-            when_packeting: "Without touch of hand",
-            each_box_contains: "60pcs",
-            short_desction: "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
-            description:
-                "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter. pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            images: [
-                {
-                    fields: {
-                        file: {
-                            url: img2,
-                            urlSmall: imgSmall2
-                        }
-                    }
-                },
-
-            ]
-        }
-    },
-    {
-        sys: {
-            id: "3"
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
         },
-        fields: {
-            name: "single economy 3",
-            slug: "single-economy-3",
-            price: 500,
-            featured: false,
-            width: 0,
-            color: 1,
-            brand: 2,
-            height: "30mm",
-            availibility: true,
-            category: 2,
-            weight: "52gm",
-            depth: "85mm",
-            quality_checking: true,
-            freshness_duration: "03days",
-            when_packeting: "Without touch of hand",
-            each_box_contains: "60pcs",
-            short_desction: "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
-            description:
-                "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter. pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            images: [
-                {
-                    fields: {
-                        file: {
-                            url: img3,
-                            urlSmall: imgSmall3
-                        }
-                    }
-                },
-
-            ]
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
         }
-    },
-    {
-        sys: {
-            id: "4"
-        },
-        fields: {
-            name: "single economy 4",
-            slug: "single-economy-4",
-            price: 700,
-            featured: false,
-            width: 0,
-            color: 1,
-            brand: 4,
-            height: "30mm",
-            availibility: true,
-            category: 3,
-            weight: "52gm",
-            depth: "85mm",
-            quality_checking: true,
-            freshness_duration: "03days",
-            when_packeting: "Without touch of hand",
-            each_box_contains: "60pcs",
-            short_desction: "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
-            description:
-                "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter. pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            images: [
-                {
-                    fields: {
-                        file: {
-                            url: img4,
-                            urlSmall: imgSmall4
-                        }
-                    }
-                },
-
-            ]
-        }
-    },
-    {
-        sys: {
-            id: "5"
-        },
-        fields: {
-            name: "single economy 5",
-            slug: "single-economy-5",
-            price: 1000,
-            featured: false,
-            width: 0,
-            color: 1,
-            brand: 3,
-            height: "30mm",
-            availibility: true,
-            category: 2,
-            weight: "52gm",
-            depth: "85mm",
-            quality_checking: true,
-            freshness_duration: "03days",
-            when_packeting: "Without touch of hand",
-            each_box_contains: "60pcs",
-            short_desction: "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
-            description:
-                "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter. pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            images: [
-                {
-                    fields: {
-                        file: {
-                            url: img5,
-                            urlSmall: imgSmall5
-                        }
-                    }
-                },
-
-            ]
-        }
-    },
-    {
-        sys: {
-            id: "6"
-        },
-        fields: {
-            name: "single economy 6",
-            slug: "single-economy-6",
-            price: 700,
-            featured: false,
-            width: 0,
-            color: 1,
-            brand: 4,
-            height: "30mm",
-            availibility: true,
-            category: 4,
-            weight: "52gm",
-            depth: "85mm",
-            quality_checking: true,
-            freshness_duration: "03days",
-            when_packeting: "Without touch of hand",
-            each_box_contains: "60pcs",
-            short_desction: "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
-            description:
-                "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter. pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            images: [
-                {
-                    fields: {
-                        file: {
-                            url: img6,
-                            urlSmall: imgSmall6
-                        }
-                    }
-                },
-
-            ]
-        }
-    },
-    {
-        sys: {
-            id: "7"
-        },
-        fields: {
-            name: "single economy 7",
-            slug: "single-economy-7",
-            price: 1200,
-            featured: false,
-            width: 0,
-            color: 1,
-            brand: 1,
-            height: "30mm",
-            availibility: true,
-            category: 1,
-            weight: "52gm",
-            depth: "85mm",
-            quality_checking: true,
-            freshness_duration: "03days",
-            when_packeting: "Without touch of hand",
-            each_box_contains: "60pcs",
-            short_desction: "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
-            description:
-                "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter. pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            images: [
-                {
-                    fields: {
-                        file: {
-                            url: img7,
-                            urlSmall: imgSmall7
-                        }
-                    }
-                },
-
-            ]
-        }
-    },
-    {
-        sys: {
-            id: "8"
-        },
-        fields: {
-            name: "single economy 8",
-            slug: "single-economy-8",
-            price: 700,
-            featured: false,
-            width: 0,
-            color: 1,
-            brand: 2,
-            height: "30mm",
-            availibility: true,
-            category: 1,
-            weight: "52gm",
-            depth: "85mm",
-            quality_checking: true,
-            freshness_duration: "03days",
-            when_packeting: "Without touch of hand",
-            each_box_contains: "60pcs",
-            short_desction: "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter.",
-            description:
-                "Mill Oil is an innovative oil filled radiator with the most modern technology. If you are looking for something that can make your interior look awesome, and at the same time give you the pleasant warm feeling during the winter. pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            images: [
-                {
-                    fields: {
-                        file: {
-                            url: img8,
-                            urlSmall: imgSmall8
-                        }
-                    }
-                },
-
-            ]
-        }
-    },
-]
-const categoryProduct = [
-    {
-        id: 1,
-        name: "Household",
-        slug: "household"
-    }, {
-        id: 2,
-
-        name: "Fruits and Vegetables",
-        slug: "fruits-and-vegetables"
-    }, {
-        id: 3,
-
-        name: "Cooking",
-        slug: "cooking"
-    }, {
-        id: 4,
-
-        name: "Beverages",
-        slug: "beverages"
-    },
-    {
-        id: 5,
-        name: "Home and Cleaning",
-        slug: "home-and-cleaning"
-    },
-];
-const Color = [
-    {
-        id: 1,
-        name: "Red",
-        slug: "red",
-    },
-    {
-        id: 2,
-        name: "Yellow",
-        slug: "yellow",
-    },
-    {
-        id: 3,
-        name: "Blue",
-        slug: "blue",
-    },
-    {
-        id: 4,
-        name: "Green",
-        slug: "green",
-    },
-    {
-        id: 5,
-        name: "White",
-        slug: "white",
+      ]
     }
-]
-const Brand = [
-    {
-        id: 1,
-        name: 'Apple',
-        slug: 'app'
+  },
+  {
+    sys: {
+      id: "2"
     },
-    {
-        id: 2,
-        name: 'Samsung',
-        slug: 'samsung'
+    fields: {
+      name: "single basic",
+      slug: "single-basic",
+      type: "single",
+      price: 150,
+      size: 250,
+      capacity: 1,
+      pets: false,
+      breakfast: false,
+      featured: false,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "3"
     },
-    {
-        id: 3,
-        name: 'Micromax',
-        slug: 'micromax'
+    fields: {
+      name: "single standard",
+      slug: "single-standard",
+      type: "single",
+      price: 250,
+      size: 300,
+      capacity: 1,
+      pets: true,
+      breakfast: false,
+      featured: false,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "4"
     },
-    {
-        id: 4,
-        name: 'Asus',
-        slug: 'asus'
+    fields: {
+      name: "single deluxe",
+      slug: "single-deluxe",
+      type: "single",
+      price: 300,
+      size: 400,
+      capacity: 1,
+      pets: true,
+      breakfast: true,
+      featured: false,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img4
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "5"
     },
-
-]
-const posts = [
-
-]
-
-export { products, posts, categoryProduct, Color, Brand }
+    fields: {
+      name: "double economy",
+      slug: "double-economy",
+      type: "double",
+      price: 200,
+      size: 300,
+      capacity: 2,
+      pets: false,
+      breakfast: false,
+      featured: false,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img5
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "6"
+    },
+    fields: {
+      name: "double basic",
+      slug: "double-basic",
+      type: "double",
+      price: 250,
+      size: 350,
+      capacity: 2,
+      pets: false,
+      breakfast: false,
+      featured: false,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img6
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "7"
+    },
+    fields: {
+      name: "double standard",
+      slug: "double-standard",
+      type: "double",
+      price: 300,
+      size: 400,
+      capacity: 2,
+      pets: true,
+      breakfast: false,
+      featured: false,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img7
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "8"
+    },
+    fields: {
+      name: "double deluxe",
+      slug: "double-deluxe",
+      type: "double",
+      price: 400,
+      size: 500,
+      capacity: 2,
+      pets: true,
+      breakfast: true,
+      featured: true,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img8
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "9"
+    },
+    fields: {
+      name: "family economy",
+      slug: "family-economy",
+      type: "family",
+      price: 300,
+      size: 500,
+      capacity: 3,
+      pets: false,
+      breakfast: false,
+      featured: false,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img9
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "10"
+    },
+    fields: {
+      name: "family basic",
+      slug: "family-basic",
+      type: "family",
+      price: 350,
+      size: 550,
+      capacity: 4,
+      pets: false,
+      breakfast: false,
+      featured: false,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img10
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "11"
+    },
+    fields: {
+      name: "family standard",
+      slug: "family-standard",
+      type: "family",
+      price: 400,
+      size: 600,
+      capacity: 5,
+      pets: true,
+      breakfast: false,
+      featured: false,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img11
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "12"
+    },
+    fields: {
+      name: "family deluxe",
+      slug: "family-deluxe",
+      type: "family",
+      price: 500,
+      size: 700,
+      capacity: 6,
+      pets: true,
+      breakfast: true,
+      featured: true,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: img12
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    sys: {
+      id: "13"
+    },
+    fields: {
+      name: "presidential",
+      slug: "presidential-room",
+      type: "presidential",
+      price: 600,
+      size: 1000,
+      capacity: 10,
+      pets: true,
+      breakfast: true,
+      featured: true,
+      description:
+        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+      extras: [
+        "Plush pillows and breathable bed linens",
+        "Soft, oversized bath towels",
+        "Full-sized, pH-balanced toiletries",
+        "Complimentary refreshments",
+        "Adequate safety/security",
+        "Internet",
+        "Comfortable beds"
+      ],
+      images: [
+        {
+          fields: {
+            file: {
+              url: room1
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: room4
+            }
+          }
+        }
+      ]
+    }
+  }
+];

@@ -3,16 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { ProductProvider } from './contexts/ProductProvider';
 import { BrowserRouter as Router } from 'react-router-dom';
-
+import { RoomProvider } from './Context';
 
 ReactDOM.render(
-  <ProductProvider>
+  <RoomProvider>
     <Router>
       <App />
     </Router>
-  </ProductProvider>,
+  </RoomProvider>,
   document.getElementById('root')
 );
 

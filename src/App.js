@@ -1,29 +1,22 @@
 import React from 'react';
 import './App.css';
-import { Switch, Route } from 'react-router-dom';
+
 import Home from "./pages/Home";
-import Shop from './pages/Shop';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
-import Cart from './pages/Cart';
-import CheckOut from './pages/CheckOut';
-
-import ProductDetail from './pages/ProductDetail';
-import ScrollToTop from './components/ScrollToTop';
-
+import Rooms from "./pages/Rooms";
+import SingleRoom from "./pages/SingleRoom";
+import Error from "./pages/Error";
+import { Route, Switch } from "react-router-dom";
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <>
-      <ScrollToTop />
+      <NavBar />
       <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/shop' component={Shop} />
-        <Route path='/blog' component={Blog} />
-        <Route path='/contact' component={Contact} />
-        <Route path='/cart' component={Cart} />
-        <Route path='/:slug' component={ProductDetail} />
-        <Route path='/checkout' component={CheckOut} />
+        <Route path="/" exact component={Home} />
+        <Route path="/rooms" exact component={Rooms} />
+        <Route path="/rooms/:slug" exact component={SingleRoom} />
+        <Route component={Error} />
       </Switch>
     </>
   );
